@@ -1,0 +1,22 @@
+startup_message off
+hardstatus alwayslastline '%{= kg}[%{+b G}%H%{-b g}][%= %{= w}%?%-Lw%?%{= R}%n*%f %t%?%{= R}(%u)%?%{= w}%+Lw%?%= %{= g}][ %{+b y}Load: %l %{-b g}][%{+b B} %Y-%m-%d %{W}%c:%s %{-b g}]'
+nethack on
+sorendition Bk
+
+bind ^a focus down
+bind a focus up
+
+layout new
+split -v
+focus
+resize -20
+split
+focus
+resize 10
+focus
+screen -t 'Core' 0
+focus
+screen -t 'Aux' 1
+focus
+screen -t 'SysStat' 2 htop
+focus
