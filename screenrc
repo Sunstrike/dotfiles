@@ -6,6 +6,8 @@ sorendition Bk
 bind ^a focus down
 bind a focus up
 
+term "screen-256color" # Fix dumbass $TERM setting
+
 layout new
 split -v
 focus
